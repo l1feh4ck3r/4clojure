@@ -1,0 +1,5 @@
+(#(every? true? (map (fn [x y] (= x y)) % (reverse %)))
+;  '(1 2 3 4 5))
+  "racecar")
+;   [:foo :bar :foo])
+;   '(1 1 3 3 1 1))
