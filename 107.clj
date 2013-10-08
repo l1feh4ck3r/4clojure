@@ -1,3 +1,7 @@
-((
-(fn [x] (fn [y] (reduce (fn [z v] (* z v)) (take x (repeat y)))))
-2) 16)
+(map #((
+(fn [n] 
+    (fn [x]
+        (reduce * (take n (repeat x)))
+    )
+)
+%) 2) [0 1 2 3 4])
